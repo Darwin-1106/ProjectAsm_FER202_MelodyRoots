@@ -1,0 +1,115 @@
+/* ---------- Card wrapper ---------- */
+.inst-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.inst-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(4, 87, 22, 0.18);
+}
+
+/* ---------- Ảnh ---------- */
+.inst-card-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.inst-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.inst-card:hover .inst-card-img {
+  transform: scale(1.07);
+}
+
+/* ---------- Badge level ---------- */
+.inst-card-level {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ---------- Body ---------- */
+.inst-card-body {
+  padding: 1.1rem 1.25rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* ---------- Meta (category + origin) ---------- */
+.inst-card-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0.55rem;
+}
+
+.inst-card-category,
+.inst-card-origin {
+  font-size: 0.78rem;
+  color: #555;
+  background: #f2f4f3;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+}
+
+/* ---------- Tên nhạc cụ ---------- */
+.inst-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #03301d;
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- Mô tả ---------- */
+.inst-card-desc {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.6;
+  flex: 1;
+  /* Giới hạn 3 dòng */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Nút ---------- */
+.inst-card-btn {
+  display: inline-block;
+  color: #045716;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid #045716;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  align-self: flex-start;
+}
+
+.inst-card-btn:hover {
+  background-color: #045716;
+  color: #ffffff;
+}

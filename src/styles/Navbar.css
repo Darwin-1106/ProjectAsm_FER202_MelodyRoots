@@ -1,0 +1,69 @@
+/* ---------- Thanh navbar tổng ---------- */
+.navbar,
+.navbar-custom {
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: #045716 !important;
+}
+
+/* ---------- Brand (logo + tên) ---------- */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #07be6c !important;
+  text-decoration: none;
+}
+
+.navbar-brand svg {
+  font-size: 1.5rem;
+  color: #07be6c;
+}
+
+/* ---------- Các nav link ---------- */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #02240d !important;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  background-color: #79d887;
+  color: #03301d !important;
+}
+
+/* ---------- Nhóm button (Đăng nhập / Đăng kí) ---------- */
+.btn-navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-navbar .btn {
+  padding: 0.4rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1.5px solid #ffffff;
+  color: #02240d;
+  background-color: transparent;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-navbar .btn:hover {
+  background-color: #089c20;
+  color: #ffffff;
+}
+
