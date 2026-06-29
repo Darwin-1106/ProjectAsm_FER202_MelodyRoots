@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 import "../styles/SlideIntro.css";
 import slide1 from "../assets/SlideNhacCu.jpg";
@@ -8,23 +9,23 @@ const slides = [
   {
     img: slide1,
     title: "Khám Phá Thế Giới Âm Nhạc",
-    subtitle:
-      "Hàng trăm nhạc cụ truyền thống và hiện đại đang chờ bạn khám phá",
+    subtitle: "Hàng trăm nhạc cụ truyền thống và hiện đại đang chờ bạn khám phá",
     btn: "Xem nhạc cụ",
+    link: "/instruments",
   },
   {
     img: slide2,
     title: "Học nhạc cụ dân tộc với các giảng viên tại Đại học FPT",
-    subtitle:
-      "Các khóa học được thiết kế bởi các giảng viên nhiều kinh nghiệm",
+    subtitle: "Các khóa học được thiết kế bởi các giảng viên nhiều kinh nghiệm",
     btn: "Bắt đầu học",
+    link: null,
   },
   {
     img: slide3,
     title: "Các buổi hòa nhạc",
-    subtitle:
-      "Đắm chìm vào âm nhạc dân gian với những nhạc cụ dân tộc Việt Nam",
+    subtitle: "Đắm chìm vào âm nhạc dân gian với những nhạc cụ dân tộc Việt Nam",
     btn: "Tham gia ngay",
+    link: "/events",
   },
 ];
 
@@ -44,7 +45,11 @@ function SlideIntro() {
                 <span className="slide-tag">🎵 MelodyRoots</span>
                 <h2 className="slide-title">{slide.title}</h2>
                 <p className="slide-subtitle">{slide.subtitle}</p>
-                <button className="slide-btn">{slide.btn}</button>
+                {slide.link ? (
+                  <Link to={slide.link} className="slide-btn">{slide.btn}</Link>
+                ) : (
+                  <button className="slide-btn">{slide.btn}</button>
+                )}
               </div>
             </Carousel.Caption>
           </Carousel.Item>

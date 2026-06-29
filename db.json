@@ -1,0 +1,89 @@
+{
+  "instruments": [
+    {
+      "id": "1",
+      "name": "Đàn Tranh",
+      "category": "Dây",
+      "origin": "Việt Nam",
+      "description": "Đàn tranh là nhạc cụ dây gảy truyền thống của Việt Nam, có 16 đến 25 dây, âm thanh trong trẻo và thanh thoát.",
+      "image": "/dantranh.jpg",
+      "level": "Trung cấp"
+    },
+    {
+      "id": "2",
+      "name": "Đàn Bầu",
+      "category": "Dây",
+      "origin": "Việt Nam",
+      "description": "Đàn bầu là nhạc cụ độc đáo chỉ có một dây, tạo ra âm thanh kỳ diệu nhờ cần rung bằng vỏ bầu khô.",
+      "image": "/danbau.jpg",
+      "level": "Nâng cao"
+    },
+    {
+      "id": "3",
+      "name": "Sáo Trúc",
+      "category": "Hơi",
+      "origin": "Việt Nam",
+      "description": "Sáo trúc là nhạc cụ hơi làm từ ống trúc, phát ra âm thanh nhẹ nhàng, du dương, gắn liền với đồng quê Việt Nam.",
+      "image": "/saotruc.jpg",
+      "level": "Cơ bản"
+    },
+    {
+      "id": "4",
+      "name": "Trống Dàn",
+      "category": "Gõ",
+      "origin": "Việt Nam",
+      "description": "Trống dàn là bộ nhạc cụ gõ gồm nhiều chiếc trống lớn nhỏ khác nhau, thường dùng trong dàn nhạc cung đình và lễ hội truyền thống.",
+      "image": "/trongdan.png",
+      "level": "Trung cấp"
+    },
+    {
+      "id": "5",
+      "name": "Đàn Nguyệt",
+      "category": "Dây",
+      "origin": "Việt Nam",
+      "description": "Đàn nguyệt hay đàn kìm có thùng đàn tròn như mặt trăng, hai dây tơ hoặc nylon, âm thanh ấm áp.",
+      "image": "/dannguyet.jpg",
+      "level": "Trung cấp"
+    },
+    {
+      "id": "6",
+      "name": "Đàn Tỳ Bà",
+      "category": "Dây",
+      "origin": "Trung Hoa",
+      "description": "Đàn tỳ bà là nhạc cụ dây gảy du nhập từ Trung Hoa, có hình dáng như quả lê, 4 dây với âm sắc phong phú.",
+      "image": "/dantiba.jpg",
+      "level": "Nâng cao"
+    }
+  ],
+  "events": [
+    {
+      "tenBuoiBieuDien": "Đêm Nhạc Dân Tộc Mùa Xuân",
+      "ngay": "2026-07-15",
+      "khungGio": "19:00 - 21:00",
+      "viTri": "Nhà hát Lớn Hà Nội",
+      "id": "1"
+    },
+    {
+      "tenBuoiBieuDien": "Hòa Tấu Đàn Tranh & Sáo Trúc",
+      "ngay": "2026-07-22",
+      "khungGio": "18:30 - 22:00",
+      "viTri": "Trung tâm Văn hóa TP.HCM",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "tenBuoiBieuDien": "Liên hoan Nhạc cụ Dân tộc 2026",
+      "ngay": "2026-08-05",
+      "khungGio": "08:00 - 17:00",
+      "viTri": "Cung Văn hóa Lao động, Hà Nội"
+    },
+    {
+      "tenBuoiBieuDien": "Biểu Diễn Hòa Tấu FPT University",
+      "ngay": "2026-07-31",
+      "khungGio": "19:00 - 22:00",
+      "viTri": "Đại học FPT campus Hòa Lạc",
+      "id": "-H11aelnaNw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

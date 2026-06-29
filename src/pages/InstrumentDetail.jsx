@@ -1,36 +1,24 @@
 import { useParams, Link } from "react-router-dom";
-import instruments from "../data/instruments";
+import useInstrumentDetail from "../hooks/useInstrumentDetail";
 
 function InstrumentDetail() {
   const { id } = useParams();
-  const instrument = instruments.find((i) => i.id === Number(id));
+  const { instrument } = useInstrumentDetail(id);
 
   if (!instrument) {
-    return (
-      <div style={{ padding: "3rem", textAlign: "center" }}>
-        <h2>Không tìm thấy nhạc cụ</h2>
-        <Link to="/instruments">← Quay lại danh sách</Link>
-      </div>
-    );
+    return <div style={{ padding: "3rem", textAlign: "center" }}>Đang tải...</div>;
   }
 
   const { name, category, origin, description, image, level } = instrument;
 
   return (
     <div style={{ maxWidth: 800, margin: "3rem auto", padding: "0 1.5rem" }}>
-      <Link
-        to="/instruments"
-        style={{ color: "#045716", fontWeight: 600, textDecoration: "none" }}
-      >
+      <Link to="/instruments" style={{ color: "#045716", fontWeight: 600, textDecoration: "none" }}>
         ← Quay lại danh sách
       </Link>
 
       <div style={{ marginTop: "1.5rem", display: "flex", gap: "2rem", flexWrap: "wrap" }}>
-        <img
-          src={image}
-          alt={name}
-          style={{ width: 320, height: 260, objectFit: "cover", borderRadius: 14 }}
-        />
+        <img src={image} alt={name} style={{ width: 320, height: 260, objectFit: "cover", borderRadius: 14 }} />
         <div style={{ flex: 1, minWidth: 240 }}>
           <span style={{ background: "#e8f5ec", color: "#045716", padding: "0.2rem 0.7rem", borderRadius: 20, fontSize: "0.8rem", fontWeight: 600 }}>
             {category}

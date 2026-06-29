@@ -1,8 +1,10 @@
 import InstrumentCard from "../components/InstrumentCard";
-import instruments from "../data/instruments";
+import useInstruments from "../hooks/useInstruments";
 import "../styles/Instruments.css";
 
 function Instruments() {
+  const { instruments, deleteInstrument } = useInstruments();
+
   return (
     <div className="instruments-page">
       <div className="instruments-header">
@@ -14,7 +16,11 @@ function Instruments() {
 
       <div className="instruments-grid">
         {instruments.map((inst) => (
-          <InstrumentCard key={inst.id} instrument={inst} />
+          <InstrumentCard
+            key={inst.id}
+            instrument={inst}
+            onDelete={deleteInstrument}
+          />
         ))}
       </div>
     </div>
